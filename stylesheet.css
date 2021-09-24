@@ -1,0 +1,91 @@
+
+/* The body tag, here will be things like background color*/
+body {
+  background: rgb(255, 255, 255);
+  
+
+}
+h1 {
+  color: rgb(255, 255, 255);
+  opacity: 100%;
+  }
+
+ 
+.Heading1 {
+margin-left: 35%;
+}
+
+
+/* styling and colorizing buttons */
+
+  
+.button1, .button2, .button3 {
+    background-color: rgb(229, 204, 214);
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     transition-duration: 0.4s; 
+    }
+ .button1:hover, .button2:hover, .button3:hover {
+  background-color: rgb(61, 61, 144);
+  color: white;
+ }
+ 
+  .header {
+      border: 10px solid rgb(229, 204, 214);
+      padding: 15px;
+      background-color: rgb(223, 158, 186);
+    }
+  
+    .panel1 {grid-area: panel1;}
+    .panel2 {grid-area: panel2;}
+    .panel3{grid-area: panel3;}
+    .bottom {grid-area: panel4;}
+
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+      'panel1 panel2 panel3'
+      'bottom bottom bottom'
+      ;
+      grid-gap: 10px;
+      background: rgb(238,174,202);
+      background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
+      padding: 10px;
+      border: 10px solid rgb(229, 204, 214);
+    }
+
+    .grid-container div {
+      background-color: rgba(238, 174, 202, 0.61);
+      text-align: center;
+     
+      border: 10px solid rgb(229, 204, 214);
+      font-size: 30px;
+      padding: 10px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+     .grid-container{
+      display: grid;
+      grid-template-areas: 
+      'panel1'
+      'panel2'
+      'panel3'
+      'bottom'
+      ;
+
+     }
+    }
+
+    /*makes the pictures responsive*/
+   .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+

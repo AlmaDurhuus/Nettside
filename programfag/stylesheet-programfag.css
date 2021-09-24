@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(255, 255, 255);
+    }
+
+h1 {
+    color: whitesmoke;
+}
+ 
+/*creating layout for the site*/
+.header{
+      border: 10px solid rgb(229, 204, 214);     
+      padding: 15px;
+      background-color: rgba(238,174,202,1);
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+.side-panel {grid-area: side-panel;}
+.picture1 { grid-area: picture1; }
+.picture2 { grid-area: picture2; }
+.picture3 { grid-area: picture3; }
+.picture4 { grid-area: picture4; }
+.picture5 { grid-area: picture5; }
+.picture6 { grid-area: picture6; }
+
+
+.picture-grid-container {
+    display: grid;
+    grid-template-areas:
+
+    'side-panel picture1 picture2 picture3'
+    'side-panel picture4 picture5 picture6'
+      ;
+      
+    grid-gap: 10px;
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
+    padding: 10px;
+    border: 10px solid rgb(229, 204, 214);
+   
+  }
+  
+.picture-grid-container div {
+    background-color: rgba(238, 174, 202, 0.61);
+    text-align: center;
+   
+    font-size: 30px;
+    padding: 10px;
+    border: 10px solid rgb(229, 204, 214);
+  }
+
+
+
+
+
+ 
+
+@media(max-width: 850px) {
+  .picture-grid-container {
+    display: grid;
+    grid-template-areas:
+
+    'side-panel' 
+    'picture1' 
+    'picture2 '
+    'picture3'
+    'picture4 '
+    'picture5'
+    'picture6';
+
+  }
+
+
+}
+
+/*dropwon start*/
+ /* Dropdown Button */
+ .dropbtn {
+  background-color: rgb(229, 204, 214);
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  transition-duration: 0.4s; 
+  
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c0000;
+  min-width: 100px;
+  
+  box-shadow: 0px 8px 16px 0px rgba(68, 0, 40, 0.425);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: darkblue; color: white;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; ;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: darkblue; color: white;} 
+
+
+/*dropdown end*/

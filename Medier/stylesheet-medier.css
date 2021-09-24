@@ -1,0 +1,81 @@
+.heading {
+      border: 10px solid rgb(229, 204, 214);
+      padding: 15px;
+      background-color: rgba(238,174,202,1);
+      color: whitesmoke;
+    }
+
+    .picture1 { grid-area: first; }
+    .picture2 { grid-area: second; }
+    .picture3 { grid-area: third; }
+    .picture4 { grid-area: fourth; }
+    .picture5 { grid-area: fifth; }
+    .picture6 {grid-area: sixth;}
+
+    .picture-grid-container {
+        display: grid;
+        grid-template-areas:
+
+        'first second third'
+        'fourth fifth sixth'
+          ;
+          
+        grid-gap: 10px;
+        background: rgb(143, 28, 78);
+        background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
+        padding: 20px;
+        border: 10px solid rgb(229, 204, 214);
+        
+      }
+      
+      .picture-grid-container > div {
+        background-color: rgba(238, 174, 202, 0.61);
+        text-align: center;
+       
+        font-size: 30px;
+        padding: 40px;
+        border: 10px solid rgb(229, 204, 214);
+      }
+
+       .row:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .picture-grid-container {
+          display: grid;
+          grid-template-areas:
+  
+          'first' 
+          'second' 
+          'third'
+          'fourth'
+          'fifth'
+          'sixth';
+        }
+      }
+
+      .responsive {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      /*home button*/
+      .home{
+        background-color: rgb(229, 204, 214);
+        border: black;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        }
+       .home:hover {
+        background-color: rgb(61, 61, 144);
+       color: white;
+       }

@@ -1,0 +1,104 @@
+h1 {
+    color: whitesmoke;
+}
+ /*creating the layout with css grids*/
+.header{
+    border: 1px solid rgb(250, 203, 242);
+      padding: 15px;
+      background-color: rgba(238,174,202,1);
+    }
+
+.side-panel {grid-area: side-panel;}
+.picture1 { grid-area: picture1; }
+.picture2 { grid-area: picture2; }
+.picture3 { grid-area: picture3; }
+.picture4 { grid-area: picture4; }
+.picture5 { grid-area: picture5; }
+.picture6 { grid-area: picture6; }
+
+
+.picture-grid-container {
+    display: grid;
+    grid-template-areas:
+
+    'side-panel picture1 picture2 picture3'
+    'side-panel picture4 picture5 picture6'
+      ;
+      
+    grid-gap: 10px;
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
+    padding: 10px;
+    border: 10px solid rgb(229, 204, 214);
+    
+  }
+  
+.picture-grid-container div {
+    background-color: rgba(238, 174, 202, 0.61);
+    text-align: center;
+   
+    border: 10px solid rgb(229, 204, 214);
+    font-size: 30px;
+    padding: 10px;
+  }
+
+ 
+  @media only screen and (max-width: 768px) {
+    
+      .picture-grid-container {
+        display: grid;
+        grid-template-areas:
+    
+        'side-panel picture1' 
+        'side-panel picture2 '
+        'side-panel picture3'
+        'side-panel picture4 '
+        'side-panel picture5'
+        'side-panel picture6';
+    
+      }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    
+    .picture-grid-container {
+      display: grid;
+      grid-template-areas:
+      'side-panel'
+      'picture1' 
+      'picture2 '
+      'picture3'
+      'picture4 '
+      'picture5'
+      'picture6';
+  
+    }
+}
+  
+/*home button*/
+.home{
+    background-color: rgb(229, 204, 214);
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s; 
+    margin-right: auto;
+    }
+   .home:hover {
+    background-color: rgb(61, 61, 144);
+   color: white;
+   }
+
+
+   /*makes the pictures responsive*/
+   .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+

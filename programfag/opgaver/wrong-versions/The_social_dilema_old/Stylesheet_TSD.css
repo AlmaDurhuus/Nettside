@@ -1,0 +1,97 @@
+
+body{
+    background-color: rgba(238,174,202,1)
+}
+
+h1 {
+    font: bold 40px verdana;
+    text-align: center;
+    color:aliceblue;
+}
+
+p {
+    color:aliceblue;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("Social_dilema.jpg");
+    /* Set a specific height */
+    min-height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textbox1, .textbox2, .textbox3, .textbox4, .textbox5, .textbox6, .textbox7 {
+    height:auto;
+    background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
+    font-size:28px
+}
+
+.parallax2 {
+    /* The image used */
+    background-image:url(covid-social-media.gif);
+    /* Set a specific height */
+    min-height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image:url(AI.jpeg);
+    /* Set a specific height */
+    min-height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 {
+    /* The image used */
+    background-image:url(Filterboble.jpg);
+    /* Set a specific height */
+    min-height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax5 {
+    /* The image used */
+    background-image:url(kroppspress.png);
+    /* Set a specific height */
+    min-height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax6 {
+    /* The image used */
+    background-image:url(onlinesafety.jpeg);
+    /* Set a specific height */
+    min-height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
