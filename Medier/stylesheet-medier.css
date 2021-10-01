@@ -3,6 +3,7 @@
       padding: 15px;
       background-color: rgba(238,174,202,1);
       color: whitesmoke;
+      text-align: center;
     }
 
     .picture1 { grid-area: first; }

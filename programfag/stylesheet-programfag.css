@@ -11,6 +11,7 @@ h1 {
       border: 10px solid rgb(229, 204, 214);     
       padding: 15px;
       background-color: rgba(238,174,202,1);
+      text-align: center;
     }
 
     .row::after {
@@ -41,7 +42,7 @@ h1 {
     background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
     padding: 10px;
     border: 10px solid rgb(229, 204, 214);
-   
+       
   }
   
 .picture-grid-container div {

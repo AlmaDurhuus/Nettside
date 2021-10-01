@@ -6,6 +6,7 @@ h1 {
     border: 1px solid rgb(250, 203, 242);
       padding: 15px;
       background-color: rgba(238,174,202,1);
+      text-align: center;
     }
 
 .side-panel {grid-area: side-panel;}
