@@ -1,25 +1,8 @@
-/*home button*/
-.home {
-    background-color: rgb(229, 204, 214);
-    border: black;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.4s; 
-    margin-right: auto;
-    }
-   .home:hover {
-    background-color: rgb(61, 61, 144);
-   color: white;
-   }
 
 
 
-h1 { color: whitesmoke;}
-p { color: whitesmoke;}
-h2 {color: whitesmoke;}
+h1 { color: rgba(207, 207, 207, 0.712);}
+p { color: rgba(207, 207, 207, 0.712);}
+h2 {color: rgba(207, 207, 207, 0.712);}
 
 body {background-color: rgb(53, 53, 109);}

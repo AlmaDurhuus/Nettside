@@ -1,7 +1,7 @@
 
 /* The body tag, here will be things like background color*/
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(238,174,202);
   
 
 }
@@ -10,29 +10,20 @@ h1 {
   opacity: 100%;
   }
  
-/* styling and colorizing buttons */
-.button1, .button2, .button3 {
-    background-color: rgb(229, 204, 214);
-    border: black;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-     transition-duration: 0.4s; 
-}
 
-.button1:hover, .button2:hover, .button3:hover {
-  background-color: rgb(61, 61, 144);
-  color: white;
-}
+
  
-.header {
+.header2 {
       border: 10px solid rgb(229, 204, 214);
       padding: 15px;
-      background-color: rgb(238,174,202);
+      background-color: rgb(73, 42, 65);
       text-align: center;
+}
+.main {
+  background-color:  rgba(0, 0, 0, 0.603);
+  height: 1000px;
+  color: rgba(207, 207, 207, 0.712);
+  font-size: 30px;
 }
     
 .bottom {
@@ -45,50 +36,155 @@ h1 {
 }
 
 
-    .panel1 {grid-area: panel1;}
-    .panel2 {grid-area: panel2;}
-    .panel3{grid-area: panel3;}
-    
+/*creating a top nav*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-    .grid-container {
-      display: grid;
-      grid-template-areas: 
-      'panel1 panel2 panel3'
-      ;
-      grid-gap: 10px;
-      background: rgb(238,174,202);
-      background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 43%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%); 
-      padding: 10px;
-      border: 10px solid rgb(229, 204, 214);
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .grid-container div {
-      background-color: rgba(238, 174, 202, 0.61);
-      text-align: center;
-     
-      border: 10px solid rgb(229, 204, 214);
-      font-size: 20px;
-      padding: 10px;
-    }
-   
-    @media only screen and (max-width: 768px) {
-      /* For mobile phones: */
-     .grid-container{
-      display: grid;
-      grid-template-areas: 
-      'panel1'
-      'panel2'
-      'panel3'
-   
-      ;
 
-     }
-    }
 
-    /*makes the pictures responsive*/
-    .responsive {
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: rgb(73, 42, 65) ;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover{
+  color: whitesmoke;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: lightslategray;
+}
+
+/*making it responsive*/
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: rgb(73, 42, 65);
       width: 100%;
-      max-width: 400px;
-      height: auto;
-    }
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+      
+          
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  padding: 10px;
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto ;
+    
    
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    
+   
+  }
+}

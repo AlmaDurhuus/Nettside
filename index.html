@@ -9,42 +9,117 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 
     <link rel="stylesheet" type="text/css" href="Global.css"/>
-  
-
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+   
+   
 </head>
 <body>
-    <div class="header">
+
+    <!--https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Hjem</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">Hjem</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./programfag/programfag.html" class="nav-link">IT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Medier/mediefag.html" class="nav-link">Medier</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Naturfag/Naturfag.html" class="nav-link">Naturfag</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+
+
+    <div class="header2">
         <h1>Informations teknologi og medie produksjon</h1>
+        <div class="main">
+
+
+            Hei!
+            <br>
+            <br>
+            Velkommen til min nettside!
+            <br>
+            Her kan du se hva jeg har gjort i Medie timer, IT, og Naturfag
+            <br>
+            <br>
+            noen bilder fra 2021
+
+
+
+            <div class="grid-container">
+                <div class="grid-item"><a data-fancybox="single" data-src="./videos_and_pictures/NIKI.png">
+                    <img src="./videos_and_pictures/Niki.png" class="responsive"/>
+                  </a></div>
+                <div class="grid-item">
+                    <a data-fancybox="single" data-src="./videos_and_pictures/alt-i-fokus-stor.JPG">
+                    <img src="./videos_and_pictures/alt-i-fokus.JPG" class="responsive" />
+                  </a></div>
+                <div class="grid-item"><a data-fancybox="single" data-src="./videos_and_pictures/Hoy-lukkertid-stor.JPG">
+                    <img src="./videos_and_pictures/Hoy-lukkertid.JPG" class="responsive" />
+                  </a></div>  
+                <div class="grid-item"><a data-fancybox="single" data-src="./videos_and_pictures/FuglStor.JPG">
+                    <img src="./videos_and_pictures/Fugl.JPG" class="responsive" />
+                  </a></div>
+                <div class="grid-item"><a data-fancybox="single" data-src="./videos_and_pictures/lav-lukkertid-stor.JPG">
+                    <img src="./videos_and_pictures/lav-lukkertid.JPG" class="responsive" />
+                  </a></div>
+                <div class="grid-item"><a data-fancybox="single" data-src="./videos_and_pictures/Chipstor.jpeg">
+                    <img src="./videos_and_pictures/chip001.png" class="responsive" />
+                  </a></div>  
+            </div>
+            takk for at du har sett på nettside min 
+        </div>
     </div>
+        
     
-    <div class="grid-container">
-        <div class="panel1">
-                <p>
-                    <a class="button3" href="./programfag/programfag.html">IT</a> 
-                    <h2>Prosjekter fra IT fag</h2>
-                    <img src="./videos_and_pictures/chip001.png" alt="tegning af chip" width="100%" class="responsive">
-                </p> 
-        </div>
-
-        <div class="panel2">
-            <p><a class="button1" href="./Medier/mediefag.html">Medier</a></p>
-                <h2>Film og bilder fra medie timer</h2>
-                <img src="./videos_and_pictures/Light.jpg" alt="bilder av spejlende kuler" class="responsive" >
-                </div>
-
-        <div class="panel3">
-                <p><a class="button2" href="Naturfag/Naturfag.html">Naturfag</a></p>
-                <h2>Projekter fra Naturvidenskab</h2>
-                <img src="videos_and_pictures/Papirfly.jpg" alt="Papirfly" width="100%" class="responsive">
-        </div>
+    
 
         
 
 
-    </div>
+    
 
-    <div class="bottom">
-          <h1>takk for at du har sett på nettside min <img src="videos_and_pictures/you-got-this.png" alt="you_got_this_test" class="responsive1"></h1> 
-    </div>
 
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+        </script>
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js">
+     </script>
 </body>

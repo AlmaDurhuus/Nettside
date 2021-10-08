@@ -12,6 +12,10 @@ p {
     font: bold 20px verdana;
     color:aliceblue;
 }
+dl {
+    font: bold 18px verdana;
+    color:aliceblue;
+}
 
 .textbox1, .textbox2, .textbox3, .textbox4, .textbox5, .textbox6, .textbox7 {
     height:auto;
@@ -37,10 +41,10 @@ p {
     background-image: url("Social_dilema.jpg");
 }
 
-.parallax2 {
+.parallax3 {
     /* The image used */
     background-image:url(covid-social-media.gif);}
-.parallax3 {
+.parallax2 {
     /* The image used */
     background-image:url(AI2.jpg); 
 }

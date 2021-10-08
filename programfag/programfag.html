@@ -15,34 +15,75 @@
 </head>
 <body>
 
-<div class="header">   
-    <p><a class="home" href="../index.html">Hjem</a></p>
+ <!--https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
+ <header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Hjem</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link">Hjem</a>
+            </li>
+            <li class="nav-item">
+                <a href="../programfag/programfag.html" class="nav-link">IT</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Medier/mediefag.html" class="nav-link">Medier</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Naturfag/Naturfag.html" class="nav-link">Naturfag</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<div class="header2">   
+    
     <h1>konseptutvikling og programmering <br> teknologiforståelse</h1>
- 
+    <div class="main">
+        <br> <br> <br>
+        Oppgaver fra konseptutvikling og programmering:
+        <br>
+        <a href="./opgaver/css_grid/css-grid.html">css-grids</a>
+        <br>
+        <a href="../nettside-kopi/netside/website.html">Første nettside</a>
+        <br>
+        <a href="./opgaver/HangMan-finished/index.html">Hangman</a>
+        <br>
+        <br>
+        <br>
+        Oppgaver fra teknologiforståelse:
+        <br>
+        <a href="./opgaver/The_social_dilema/The_social_dilema.html">Social_Dilema</a>
+
+        <br> <br> <br> <br> <br>
+        <div class="grading">
+            tilbakemeldinger fra oppgaver
+
+            <div class="grid-container">
+                <div>
+                    sosiale medier :
+                    <br>
+                    afventer vurdering
+                </div>
+                    <div>2</div>
+                    <div>3</div>  
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+        </div>
+    </div>
 </div>
 
-<div class="picture-grid-container">
-    <div class="side-panel">
-        <div class="dropdown">
-            <button class="dropbtn">Oppgaver</button>
-            <div class="dropdown-content">
-              <a href="./opgaver/css_grid/css-grid.html">css-grids</a>
-              <a href="./opgaver/The_social_dilema/The_social_dilema.html">Social_Dilema</a>
-              <a href="../nettside-kopi/netside/website.html">Første nettside</a>
-              <a href="./opgaver/HangMan-finished/index.html">Hangman</a>
-            </div>
-          </div> 
-    </div>
 
-    <div class="picture1"> <a data-fancybox="single" data-src=" ../videos_and_pictures/Chipstor.jpeg">
-        <img src=" ../videos_and_pictures/chip001.png" class="responsive" /></a></div>
-    <div class="picture2"> <a data-fancybox="single" data-src="../videos_and_pictures/hjertestor.jpeg">
-        <img src="../videos_and_pictures/hjerte.png" class="responsive"/></a></div>
-    <div class="picture3"> <a data-fancybox="single" data-src="../videos_and_pictures/internetStor.jpeg">
-        <img src="../videos_and_pictures/internet.jpeg" class="responsive"/></a></div>
-    <div class="picture4">insert picture</div>
-    <div class="picture5">insert picture</div>
-    <div class="picture6">insert picture</div>
+
 
 
 </div>
@@ -50,4 +91,25 @@
     <!--here i refer to a script which is written in javascript, the script is making the pictures come up front-->
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+hamburger.classList.toggle("active");
+navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+}
+
+    </script>
+
 </html>
