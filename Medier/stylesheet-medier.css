@@ -1,7 +1,9 @@
 body {
   background: rgb(238,174,202);
+  color: whitesmoke;
 
 }
+
 .heading {
       border: 10px solid rgba(229, 204, 214, 0.726);
       padding: 15px;
@@ -12,21 +14,17 @@ body {
 
     .picture-grid-container {
       display: grid;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 300px 300px 300px;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 250px 250px;
       padding: 10px;
       justify-content: center;
     }
    
-    
-
-
-    
       
       .picture-grid-container > div {
         background-color: rgb(73, 42, 65);
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
         padding: 40px;
         border: 10px solid rgba(229, 204, 214, 0.733);
       
@@ -48,6 +46,49 @@ body {
     width: 100%;
     max-height: 100%;
 }
+
+.gridVideoContainer {
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 50% 50%;
+  padding: 10px;
+  justify-content: center;
+}
+
+  
+  .gridVideoContainer > div {
+    background-color: rgb(73, 42, 65);
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    border: 10px solid rgba(229, 204, 214, 0.733);
+  
+  }
+
+  
+
+  @media only screen and (max-width: 700px) {
+
+    .gridVideoContainer {
+      display: grid;
+      grid-template-columns: auto;
+      
+    }
+  }
+
+.classDescription:hover {
+    background-color: #475569
+}
+.hide{
+  display: none;
+}
+
+.Text:hover + .hide {
+  color:whitesmoke;
+  display: contents;
+  
+}
+
 
        /*creating a top nav*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');

@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(73, 42, 65);
+    
+}
+.Header { 
+    text-align: center;
+    font-size: 40px;
+    color: rgba(207, 207, 207, 0.712);
+
+}
+.Vurdering {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 33% 33%;
+    font-size: 20px;
+    margin-top: 40px;
+    grid-gap: 20px;
+    background-color: rgba(43, 24, 38, 0.877);
+    color: rgba(207, 207, 207, 0.712);
+    text-align: center;
+    
+   
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    
+
+}
+p{
+    border: 5px solid rgba(229, 204, 214, 0.733);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .Vurdering {
+      display: grid;
+      grid-template-columns: 100%;
+      justify-content: space-evenly;
+      width: auto;
+      font-size: 15px;
+    }
+   
+  
+  }
+
+  
+.button1{
+    background-color: rgb(229, 204, 214);
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s; 
+    display: block;
+    margin: auto;
+    }
+ .button1:hover {
+  background-color: rgb(61, 61, 144);
+  color: white;
+ }
+
+
+

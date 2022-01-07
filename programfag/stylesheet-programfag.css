@@ -30,6 +30,9 @@ h1 {
       background-color: rgb(73, 42, 65);
       padding: 10px; 
       justify-content: space-evenly;
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
       
     }
     
@@ -41,6 +44,18 @@ h1 {
       color: rgba(207, 207, 207, 0.712);
      
     }
+
+    @media only screen and (max-width: 600px) {
+      .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        width: auto;
+      }
+    
+    }
+    
+ 
 
 
 
@@ -156,12 +171,3 @@ a {
 
 }
 
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: space-evenly;
-    
-  }
-
-}

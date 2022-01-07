@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Mindstorm</title>
+    <link rel="stylesheet" type="text/css" href="LegoMindstorm.css">
+</head>
+<body>
+   <div class="Heading">Lego Mindstorm</div>
+   <div>
+  <p>Lego Mindstorm er mest basert på blok programmering. Vi jobbet i grupper men min gruppe var ikke i skole.</p>
+  <br>
+
+  <video class="Video" width="320" height="240" controls  >
+    <source src="video_2021-12-03_08-37-41 1.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video> 
+
+  <br>
+  <br>
+  <p>Vurdering: 
+    <br><br><br>
+    Du har med alle deler som oppgaven krever, men alle delene som du leverer skulle vært i en film. Har du prøvd med bare en løkke, Alma? Savner at du skriver kommentarer til egenvurderingen eller snakker,  og er med søkende for samarbeid med andre utenfor gruppen din og. For fremtiden bør du evaluere deg selv bedre og jobber mer utover for å utvikle ditt PLN og ha troen på deg selv
+
+  </p>
+
+</div>
+<nav id="nav1">
+  <button onclick="loadContent(1)" class="button1">Tilbake</button>
+
+
+
+<script>
+  var bleep = new Audio("soundeffect2.mp3");
+  bleep.src(bleep.mp3);
+  function NewPage() {
+  history.go(-1)
+}
+
+  function loadContent (num) {
+      bleep.play();
+      setTimeout(NewPage, 140)
+      var div1 = document.getElementById("div1");
+    
+  }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-color:rgb(46, 46, 46);
+    color: whitesmoke;
+  
+   
+}
+.Heading {
+    text-align: center;
+}
+p {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Video {
+    display: block;
+    margin: auto;
+}
+
+.button1{
+    background-color: rgb(229, 204, 214);
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s; 
+    display: block;
+    margin: auto;
+    }
+ .button1:hover {
+  background-color: rgb(61, 61, 144);
+  color: white;
+ }
+
